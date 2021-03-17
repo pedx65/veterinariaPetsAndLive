@@ -1,0 +1,105 @@
+/*cabecera*/
+
+#cabecera {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+/******Sesion******/
+
+#sesion {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70%;
+    padding-top: 1%;
+}
+
+#sesion p {
+    font-size: 12px;
+}
+
+#sesion a {
+    font-size: 12px;
+    margin-left: 2%;
+}
+
+.area_sesion {
+    height: 15px;
+    width: 80px;
+    margin-left: 1%;
+    resize: none;
+    overflow: hidden;
+    font-size: 70%;
+}
+
+.contraseña {
+    margin-left: 3%;
+}
+
+
+/*******Registro olvido de contraseña*******/
+
+#registro {
+    margin-left: 70%;
+    margin-top: -20px;
+}
+
+#registro a {
+    font-size: 12px;
+}
+
+#registro .contraseña {
+    margin-left: 23%;
+}
+
+.form_cabecera {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    #sesion {
+        margin-left: 50%;
+    }
+    #sesion * {
+        margin-top: 1%;
+    }
+    #registro {
+        margin-left: 50%;
+        margin-top: -3%;
+    }
+    #cabecera {
+        height: 17%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #sesion {
+        margin-left: 52%;
+    }
+    #sesion * {
+        margin-top: 1%;
+    }
+    #registro {
+        margin-left: 52%;
+    }
+    #cabecera {
+        height: 17%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #sesion {
+        margin-left: 30%;
+    }
+    #sesion * {
+        margin-top: 1%;
+    }
+    #registro {
+        margin-left: 30%;
+    }
+    #cabecera {
+        height: 17%;
+    }
+}

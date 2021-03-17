@@ -1,0 +1,78 @@
+
+.contenedor{
+display: flex;
+justify-content: space-between;
+margin-left: 20%;
+margin-top: 5%;
+}
+
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+.datos .row {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 4%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.contenedor img{
+    margin-top:8%;
+    height: 250px;
+}
+.contenedor input{
+    width: 120%;
+}
+.contenedor .boton_generico{
+    height: 10%;
+}
+
+.container_nombre_apellido label{
+        width: 15%;
+    }
+
+.container_nombre_apellido input{
+        width:65%;
+    }
+
+.container_fecna label{
+    width: 41%;
+}
+
+.container_fecna input {
+    width: 39%;
+}
+
+.container_correo label, .container_nombre_usuario label, .container_pass label,.container_repetir_pass label{
+    width: 35%;
+}
+
+.container_correo input, .container_nombre_usuario input, .container_pass input,.container_repetir_pass input{
+    width:60%;
+}
+
+.boton_centro{
+    width: 33%;
+    margin-left: 33% !important;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor img {  
+        margin-left: 3%;
+    }
+    .contenedor{
+        margin-left: 5%;
+    }
+    
+}
+

@@ -1,0 +1,35 @@
+<h1>Elemento picture</h1>
+<h4>Ejemplo 1(imagenes escalables)</h4>
+<picture>
+
+    <source media="(min-width:800px)" srcset="img/emoji-triste.jpg">
+    <source media="(min-width:600px)" srcset="img/descarga.jpg">
+    <img src="img/emoji-asombro.jpg" title="en caso de que no se cumpla las anteriores">
+</picture>
+<h4>Ejemplo 2(imagen en vertical + ejemplo anterior)</h4>
+<picture>
+    <source media="(orientation: portrait)" srcset="img/vertical.jpg">
+    <source media="(min-width:800px)" srcset="img/emoji-triste.jpg">
+    <source media="(min-width:600px)" srcset="img/descarga.jpg">
+    <img src="img/emoji-asombro.jpg" title="en caso de que no se cumpla las anteriores">
+</picture>
+<h4>Ejemplo 3 anterior añadiendo max-width a la imagen vertical </h4>
+<picture>
+    <source media="(orientation: portrait) and (max-width:600px)" srcset="img/vertical.jpg">
+    <img src="img/emoji-triste.jpg" title="en caso de que no se cumpla las anteriores">
+</picture>
+<h4>Ejemplo 4 tipo de imagen(en este ejemplo con webp)</h4>
+<picture>
+    <source type="image/webp" srcset="img/WebP_2000x1100_v1a.webp 4000w">
+    <img src="img/emoji-triste.jpg" title="en caso de que no se cumpla las anteriores">
+</picture>
+<h4>Ejemplo 5 (resolución gráfica)</h4>
+<picture>
+    <source srcset="img/vertical.jpg, img/descarga.jpg 2x">
+    <img src="img/emoji-triste.jpg" title="en caso de que no se cumpla las anteriores">
+</picture>
+<h4>Ejemplo svg path</h4>
+<svg height="210" width="400">
+    <path d="M150 0 L75 200 L225 200 Z" />
+    Sorry, your browser does not support inline SVG.
+</svg>

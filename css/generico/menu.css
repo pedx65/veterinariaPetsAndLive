@@ -1,0 +1,211 @@
+#menu {
+    /*contenedor de menu*/
+    height: 35px;
+    margin-left: 18px;
+    width: 37%;
+    padding-left: 0.2%;
+    border-radius: 5px;
+    background: #ffffff8c;
+}
+
+#cabecera {
+    height: 100px;
+}
+
+#menu ul,
+#menu li {
+    /*ul y li dentro de menu*/
+    margin: 0 auto;
+    padding: 0;
+}
+
+#menu ul {
+    /*ul dentro de menu*/
+    width: 100%;
+}
+
+#menu li {
+    /*li dentro de menu*/
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+#menu a {
+    /*todos los enlaces dentro de menu*/
+    display: block;
+    line-height: 35px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#menu a.dropdown-arrow:after {
+    /*flecha hacia abajo , para desplegar submenu*/
+    content: "\25BE";
+    margin-left: 5px;
+}
+
+#menu li a {
+    /*dentro de a*/
+    border-left: solid thin;
+    transition: color 0.8s linear 0.2s;
+}
+
+#menu li .inicio {
+    /*quitar el border izquierdo del li "inicio"*/
+    border-left: none;
+}
+
+#menu li a:hover {
+    /*al pasar raton por encima de cada "a" dentro del menu*/
+    color: #ffffff;
+    background: #49c7e0c9;
+    transition: background 0.8s linear 0.2s;
+}
+
+#menu input {
+    /*dentro de menu todos un input con un check box dentro de menu*/
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+#menu label {
+    /*dentro de menu el label donde se guarda el icono al reducir*/
+    display: none;
+    line-height: 45px;
+    text-align: center;
+    position: absolute;
+    left: 35px
+}
+
+#menu label:before {
+    /*dentro de menu el label donde se guarda el icono al reducir:se le da formato*/
+    font-size: 1.6em;
+    content: "\2261";
+    margin-left: 20px;
+}
+
+#menu ul.sub-menus {
+    /*dentro de de menu, todos los submenus*/
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #ffffff;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+#menu ul.sub-menus li {
+    /*todos los li dentro del submenu*/
+    display: block;
+    width: 100%;
+}
+
+#menu ul.sub-menus a {
+    /*todos los a dentro del submenu*/
+    color: #1956b8;
+    font-size: 14px;
+}
+
+#menu li:hover ul.sub-menus {
+    /*al mantener el raton encima de un li, se despliega submenu*/
+    display: block;
+}
+
+#menu ul.sub-menus a:hover {
+    /*al mantener el raton por encima de uno de los elementos del submenu*/
+    background: #20dfafa6;
+    color: #000000;
+}
+
+
+/*********************************RESPONSIVE MEDIA ***********************************/
+
+@media screen and (max-width: 1300px) {
+    #menu {
+        position: relative;
+        margin-left: 0%;
+        margin-top: -3%;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #menu ul {
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none
+    }
+    #menu ul.sub-menus {
+        width: 100%;
+        position: static;
+    }
+    #menu ul.sub-menus a {
+        padding-left: 30px;
+    }
+    #menu li {
+        display: block;
+        float: none;
+        width: auto;
+    }
+    #menu input,
+    #menu label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block
+    }
+    #menu input {
+        z-index: 4
+    }
+    #menu input:checked+label {
+        /*color al pulsar el menu*/
+        color: white
+    }
+    #menu input:checked+label:before {
+        /*cruz al pulsar el menu*/
+        content: "\00d7"
+    }
+    #menu input:checked~ul {
+        /*mostrar contenido del menu al pulsarlo*/
+        display: block
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    #menu {
+        position: absolute;
+        top: 20px;
+        float: left;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (max-width:1200px) and (max-width:2000px) {
+    #menu {
+        position: absolute;
+        top: 30px;
+        float: left;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (max-width: 600px) and (max-width: 799px) {
+    #menu {
+        position: absolute;
+        top: 20px;
+        float: left;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

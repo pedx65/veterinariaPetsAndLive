@@ -1,0 +1,64 @@
+.grupo_tarjetas .tarjeta {
+  border: solid thin;
+  margin-right: 1%;
+  background-color: rgba(255, 255, 255, 0.37);
+  margin-top: 5% !important;
+}
+
+ .galeria {
+  margin-top: 10%;
+  margin-left: 1%;
+  background-color: rgba(255, 255, 255, 0.37);
+  height: 60%;
+}
+
+/* img {
+  width: 300px ;
+  height: 300px ;
+} */
+
+img {
+      width: 50%;
+object-fit: cover;
+height: 45%;
+}
+img:hover {
+   filter: grayscale(80%);
+}
+
+.foto_cachorro > img{
+  width: 100%!important;
+height: 20em!important;
+object-fit: cover!important;
+}
+
+.btn {
+  margin-bottom: 1%;
+}
+
+.col {
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.cuerpo-adoptala {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nombre {
+  margin-top: 0.5em;
+}
+
+.titulo {
+  font-size: 4em;
+}
+
+.btn_adoptar {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.tarjeta-adopcion {
+  margin-bottom: 2em;
+}
+/*# sourceMappingURL=cont_adopcion.css.map */

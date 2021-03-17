@@ -1,0 +1,45 @@
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+body .atras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4%;
+}
+
+body .container p {
+  padding: 1%;
+}
+
+body img {
+  width: 200px;
+}
+
+body .img1 {
+  float: right;
+}
+
+body .img2 {
+  float: left;
+}
+
+.atras > input.boton_generico {
+  margin: 2% 0px 2% 0px;
+}
+
+/*# sourceMappingURL=noticia_banco.css.map */

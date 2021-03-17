@@ -1,0 +1,71 @@
+body #formulario_cita {
+    padding: 3%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 20px;
+}
+
+body #formulario_cita * {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+body #formulario_cita #container_nombre label {
+    width: 25%;
+}
+
+body #formulario_cita #container_nombre select {
+    width: 40%;
+    margin-left: 10%;
+}
+
+body #formulario_cita #container_tipo label {
+    width: 25%;
+}
+
+body #formulario_cita #container_tipo select {
+    width: 40%;
+    margin-left: 10%;
+}
+
+body #formulario_cita div:not(:nth-child(4)) {
+    margin-left: 10%;
+}
+
+body #formulario_cita .boton_generico,
+body #formulario_cita .boton_pedir_cita {
+    height: 2em !important;
+    width: 50%;
+    margin-left: 25%;
+}
+
+body #formulario_cita #container_direccion input {
+    margin-right: 3% !important;
+}
+
+body #formulario_cita #container_hora_cita {
+    margin-left: 35% !important;
+    width: 50%;
+}
+
+body #formulario_cita #cita_tarde {
+    margin-left: 3% !important;
+}
+
+body #formulario_cita #container_fecha input {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) and (max-width: 2000px) {
+
+    form#formulario_cita {
+        width: 80%!important;
+        margin-left: 10%;
+    }
+
+}
+
+/*# sourceMappingURL=citas.css.map */
