@@ -1,0 +1,38 @@
+En esta página el seo serán palabras relacionadas con el tema
+Algunas de las palabras clave a utilizar seran:
+1.-Veterinaria
+2.-PETSANDLIVE
+3.-Veterinaria España
+4.-Animales informacion
+5.-Mascotas
+6.-Citas Veterinaria
+7.-Alimentacion Mascota
+
+----------------------------------------
+Cuestiones de accesibilidad:
+
+1.- la accesibilidad usada ha sido insertar alts a todas las imagenes para que las personas sordas, con un programa
+puedan leerlas.
+
+Políticas de privacidad hechas, de nuestra página petsandlive
+
+En un futuro si se sigue con este proyecto se podría plantear pagar ads a google para que se nos posicione mejor
+la pagina, asi como adaptar la accesibilidad para discapacitadas, etc
+
+El diseño de la pagina esta realizado con html5 y sus correspondientes etiquetas, así usando la herramienta SASS Y CSS 
+para su correcto funcionamiento. Usamos también JavaScript y las herramientas de Bootstrap
+
+Los iconos, son svg cogidos de internet y de la pagina oficial de Bootstrap
+
+Habrá que tener en cuenta que las imagenes no tienen derecho de autor
+
+El elemento Buscador es meramente decorativo, por tiempo no se ha podido programar correctamente , es un elemento
+de Bootstrap.
+
+Todos los derechos sobre este documento pertenecen  a Pedro Ignacio Sacristán Ramos y Andrea Raposo Tomás así como el proyecto mismo
+
+----------------------------------------
+El elemento video, se encuentra en la noticia 5 a modo de ejemplo
+
+El resto de elementos están añadidos al proyecto sobre las diferentes páginas, tambien se creo un carpeta con los ejercicios mandados en clase
+

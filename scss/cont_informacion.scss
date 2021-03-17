@@ -1,0 +1,36 @@
+.cuerpo {
+    margin-top: 5%;
+}
+
+.grupo_tarjetas {
+    display: flex;
+    flex-direction: row;
+
+    .tarjeta {
+        border: solid thin;
+        margin-left: 1%;
+        background-color: rgba(255, 255, 255, 0.37);
+    }
+
+    p {
+        color: teal;
+        font-weight: bold;
+    }
+}
+
+img {
+    width: 300px;
+}
+
+.btn {
+    margin-bottom: 1%;
+}
+
+
+@media screen and (max-width: 400px) and (max-width: 799px) {
+    
+    .img_informacion{
+        width: 85%;
+    }
+    
+}

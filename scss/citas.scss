@@ -1,0 +1,70 @@
+$color_fondo_cita: rgba(255, 255, 255, 0.37);
+
+@mixin formulario_cita() {
+    padding: 3%;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 2%;
+    background-color: $color_fondo_cita;
+    border-radius: 20px;
+}
+
+.container {
+    margin-top: 4%;
+}
+
+body {
+    #formulario_cita {
+        @include formulario_cita();
+        * {
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+        #container_nombre {
+            label {
+                width: 25%;
+            }
+        }
+        #container_nombre select {
+            width: 40%;
+            margin-left: 10%;
+        }
+        #container_tipo {
+            label {
+                width: 25%;
+            }
+            select {
+                width: 40%;
+                margin-left: 10%;
+            }
+        }
+        div:not(:nth-child(4)) {
+            margin-left: 10%;
+        }
+        .boton_generico,
+        .boton_pedir_cita {
+            height: 2em !important;
+            width: 50%;
+            margin-left: 25%;
+        }
+        #container_direccion {
+            input {
+                margin-right: 3% !important;
+            }
+        }
+        #container_hora_cita {
+            margin-left: 35% !important;
+            width: 50%;
+        }
+        #cita_tarde {
+            margin-left: 3% !important;
+        }
+        #container_fecha {
+            input {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
